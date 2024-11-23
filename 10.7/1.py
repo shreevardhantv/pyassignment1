@@ -15,3 +15,4 @@ def two_sum( nums, target):
             return [visited.index(target-v),i]
         visited.append(v)
         
+        

@@ -14,3 +14,8 @@ def tuple_input():
 
 tup = tuple_input()
 
+
+for i,j in enumerate(tup):
+    print(f"Element {i + 1}: {j}")
+
+print(f"Max: {max(tup)}, Min: {min(tup)}")

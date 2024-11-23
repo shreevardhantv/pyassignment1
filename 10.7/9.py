@@ -11,3 +11,15 @@ the following:
 (b) The average age of the customers.
 (c) The most common age in the list.
 """
+
+from statistics import mode
+
+def analyze_data(data):
+    data = [x for x in data if isinstance(x, int)]
+    return {
+        min: min(data),
+        max: max(data),
+        mode: mode(data)
+    }
+    
+
