@@ -27,21 +27,43 @@ opts pots stop tops
 """
 
 
+def is_anagram(word1, word2):
+    f1 = {}
+    for i in word1:
+        f1.setdefault(i, 0)
+        f1[i] += 1
+
+    f2 = {}
+    for i in word2:
+        f2.setdefault(i, 0)
+        f2[i] += 1
+    
+    return f1==f2
+
+
+def find_anagrams(words):
+        out = {}
+        for word in words:
+            out[tuple(sorted(list(word)))] = [i for i in words if (
+                is_anagram(i,word)
+            )]
+            
+        out = [i for i in out.values() if len(i)!= 1]
+
+        out.sort(key=lambda x: (-len(x[0])))
+
+        for i,j in enumerate(out):
+             out[i] = sorted(j)
+        return out
+
 words = []
 n = int(input("Enter amount of words: "))
 for _ in range(n):
      word = input("Enter word: ")
      words.append(word)
 
+out = find_anagrams(words)
+print("\n".join([" ".join(str(j) for j in out[i])for i in range(len(out))]))
 
 
-anagrams = {}
-for word in words:
-    anagrams.setdefault("".join(sorted(word)), []).append(word)
-anagrams = [x for x in anagrams.values() if len(x) >1]
-anagrams.sort(key=lambda x: (-len(x[0])))
 
-for i,j in enumerate(anagrams):
-        anagrams[i] = sorted(j)
-
-print("\n".join([" ".join(str(j) for j in anagrams[i])for i in range(len(anagrams))]))

@@ -21,6 +21,6 @@ Slots Where Only One Participant is Available: {'2:00-3:00',
 """
 
 def find_slots(all: set, booked_1: set, booked_2: set):
-    avail = all.difference(booked_1.union(booked_2))
-    single_slots = booked_1.union(booked_2).difference(booked_1.intersection(booked_2))
+    avail = all - ( booked_1 | booked_2 )
+    single_slots = (booked_1 | booked_2) - (booked_1 & booked_2)
     print(f"Available slots: {avail}\nSlots Where Only One Participant is Available: {single_slots}")

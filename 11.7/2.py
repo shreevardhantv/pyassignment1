@@ -21,3 +21,4 @@ for i in words:
     lengths.setdefault(len(i), set()).add(i)
 
 print(lengths)
+

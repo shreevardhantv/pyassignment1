@@ -27,3 +27,35 @@ Exclusive Interactors: Eve, Frank, Grace
 Most Popular Post: post1
 Common users for post1 and post2: Alice, David
 """
+
+post1 = {'Alice': 'like',
+         'Bob': 'comment',
+         'Charlie': 'share',
+         'David': 'like',
+         'Eve': 'like'
+         }
+
+post2 = {'Alice': 'comment',
+         'Charlie': 'like',
+         'David': 'comment',
+         'Frank': 'share'}
+
+post3 = {'Bob': 'like',
+         'Charlie': 'comment',
+         'Eve': 'share',
+         'Grace': 'like'}
+
+def anal(post1, post2, post3):
+    post1, post2, post3 = (set(i.keys()) for i in (post1, post2, post3))
+    common = (post1 & post2 & post3)
+    exclusive = (post1 | post2 | post3) - ((post1 & post2) | (post1 & post3) | (post2 & post3))
+    popular = {tuple(post1): "post1", tuple(post2): "post2", tuple(post3): "post3"}[tuple(max((post1, post2, post3), key=lambda x: len(x)))]
+    
+    common_1_2 = (post1 & post2)
+
+    return common, exclusive, popular, common_1_2
+
+print(anal(post1, post2, post3))    
+
+
+    
