@@ -23,6 +23,7 @@ def add_product():
         print("Product already exists in stock")
     else:
         stock[prod] = 0
+        print(f"{prod} added to stock successfully")
 
 def update_product():
 
@@ -30,6 +31,7 @@ def update_product():
         print(f"{prod} not in stock")
     amt = int(input(f"Current stock is {stock[prod]}. Enter new stock: "))
     stock[prod] = amt
+    print(f"updated stock of {prod}")
 
 def check_stock():
     while (prod := input("Enter name of product: ")) not in stock:
