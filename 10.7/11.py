@@ -17,5 +17,5 @@ T = tuple_input()
 k = int(input("Enter the value of K"))
 
 result = tuple([i**2 if i==k else i for i in T])
+
 print(result)
-    

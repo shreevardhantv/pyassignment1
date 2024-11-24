@@ -44,7 +44,7 @@ def matrix_print(matrix):
 
 matA, matB = input_matrix(), input_matrix()
 
-menu = "MENU (Input 1/2/3/4/5)\n1. Sum of the two matrices\n2. Difference of the two matrices\n3.Product of the two matrices\n4. redefine matrices\n5. Exit"
+menu = "MENU (Input 1/2/3/4/5)\n1. Sum of the two matrices \n2. Difference of the two matrices \n3.Product of the two matrices \n4. redefine matrices \n5. Exit "
 while True:
     opt = int(input(menu))
 

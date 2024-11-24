@@ -19,4 +19,3 @@ halt or pass through. Assign platforms to halting trains, ensuring efficient
 management of the station. At the end of the simulation, display the total
 number of trains that have stopped or passed through the station.
 """
-
