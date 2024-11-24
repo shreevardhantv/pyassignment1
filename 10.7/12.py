@@ -1,8 +1,7 @@
 """
 Excercise 10.7
-
-Question 12 : Imagine waking up on a deserted railway station, where trains keep ar-
-riving and departing, yet no one is present to manage the hustle. As you
+Question 12 : Imagine waking up on a deserted railway station, where trains keep arriving
+and departing, yet no one is present to manage the hustle. As you
 wander about the station, a note catches your eye: ”The person who reads
 this becomes the master of the station.”
 
@@ -19,3 +18,4 @@ halt or pass through. Assign platforms to halting trains, ensuring efficient
 management of the station. At the end of the simulation, display the total
 number of trains that have stopped or passed through the station.
 """
+

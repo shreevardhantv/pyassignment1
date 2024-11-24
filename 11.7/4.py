@@ -45,7 +45,7 @@ post3 = {'Bob': 'like',
          'Eve': 'share',
          'Grace': 'like'}
 
-def anal(post1, post2, post3):
+def analyze_posts(post1, post2, post3):
     post1, post2, post3 = (set(i.keys()) for i in (post1, post2, post3))
     common = (post1 & post2 & post3)
     exclusive = (post1 | post2 | post3) - ((post1 & post2) | (post1 & post3) | (post2 & post3))
@@ -55,7 +55,7 @@ def anal(post1, post2, post3):
 
     return common, exclusive, popular, common_1_2
 
-print(anal(post1, post2, post3))    
+print(analyze_posts(post1, post2, post3))    
 
 
     
