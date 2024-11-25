@@ -52,7 +52,7 @@ def display_contacts():
     for name, phone in directory.items():
         print(f"{name}: {phone}")
 
-menu = "MENU\n1. Add Contact\n2. Update Contact\no. Delete Contact\n4. Search for Contact\n5. Display All Contacts\n6. Exit\nOption (Input 1/2/3/4/5/6): "
+menu = "MENU\n1. Add Contact\n2. Update Contact\n3. Delete Contact\n4. Search for Contact\n5. Display All Contacts\n6. Exit\nOption (Input 1/2/3/4/5/6): "
 
 while True:
     option = int(input(menu))
