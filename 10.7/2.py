@@ -8,6 +8,3 @@ sample output: [4,5,1,2,3]
 
 def rotate(L:list, k):
     return L[(k:=-(k%len(L))):] + L[:k]
-
-
-

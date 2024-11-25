@@ -12,6 +12,9 @@ def fib(n):
         return [0]
 
     L = [0,1]
-    for i in range(n-2):
+    for i in range(2, n + 1):
         L.append(L[-1] + L[-2])
     return L
+
+n = int(input("How many terms of fibonacci sequence do you want: "))
+print("\n".join(map(str, fib(n))))

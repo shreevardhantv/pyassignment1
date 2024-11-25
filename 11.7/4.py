@@ -55,7 +55,7 @@ def analyze_posts(post1, post2, post3):
 
     return common, exclusive, popular, common_1_2
 
-print(analyze_posts(post1, post2, post3))    
+print("Common Interactors: {}\nExclusive Interactors: {}\nMost popular post: {}\nCommon users for post1&post2: {}".format(*analyze_posts(post1, post2, post3)))
 
 
     
