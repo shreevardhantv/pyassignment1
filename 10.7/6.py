@@ -5,6 +5,17 @@ Question 6: Write a Python program to input any two tuples and swap them.
 Sample input: tuple1 = (1,2,3,4,5) ; tuple2 = (10,20,30,40,50)
 Sample output: tuple1 = (10,20,30,40,50) ; tuple2 = (1,2,3,4,5)
 """
+"""
+Pseudocode
+read(tuple1())
+read(tuple2())
+
+
+tuple1 = tuple2; tuple2 = tuple1
+
+print(tuple1, tuple2)
+
+"""
 
 def tuple_input():
     L = []

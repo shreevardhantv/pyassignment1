@@ -72,4 +72,3 @@ while True:
         case _:
             print("Invalid menu option. Try again")
     input("Press Enter to continue")
-3
