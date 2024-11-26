@@ -7,6 +7,7 @@ Sample input: tup = (1,2,3,4,5) ; k = 4
 Sample output: tup = (1,2,3,16,5)
 """
 
+
 def tuple_input():
     L = []
     for i in range(int(input("Enter number of items in tuple: "))):
@@ -19,3 +20,6 @@ k = int(input("Enter the value of K"))
 result = tuple([i**2 if i==k else i for i in T])
 
 print(result)
+
+
+tup = map(int, input("Enter elements of tuple seperated by space").split())
