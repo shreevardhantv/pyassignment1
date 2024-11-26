@@ -22,4 +22,3 @@ result = tuple([i**2 if i==k else i for i in T])
 print(result)
 
 
-tup = map(int, input("Enter elements of tuple seperated by space").split())
